@@ -15,36 +15,39 @@ int main() {
 	int opc;
 
 	do {
-		MenuService* ms;
+		MenuService* ms = NULL;
 		switch (opc = (ms = new MenuService())->select()) {
 		case 1: {
-			PersonaService* ps;
+			PersonaService* ps = NULL;
 			(ps = new PersonaService())->alta();
 			cout << "\n\t\t";
 			delete ps;
 			break;
 		}
 		case 2: {
-			//bajas();
+			PersonaService* ps = NULL;
+			(ps = new PersonaService())->baja();
 			cout << "\n\t\t";
-			break;
+			delete ps;			break;
 		}
 		case 3: {
-			PersonaService* ps;
+			PersonaService* ps = NULL;
 			(ps = new PersonaService())->consulta();
 			cout << "\n\t\t";
 			delete ps;
 			break;
 		}
 		case 4: {
-			//buscar();
+			PersonaService* ps = NULL;
+			(ps = new PersonaService())->busca();
 			cout << "\n\t\t";
-			break;
+			delete ps;			break;
 		}
 		case 5: {
-			//modificar();
+			PersonaService* ps = NULL;
+			(ps = new PersonaService())->modifica();
 			cout << "\n\t\t";
-
+			delete ps;
 			break;
 		}
 		case 6: {
