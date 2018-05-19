@@ -9,6 +9,7 @@
 #define FILESERVICE_H_
 
 #include <iostream>
+#include "Curso.h"
 
 using namespace std;
 
@@ -18,6 +19,7 @@ public:
 	const string& getFilename() const;
 	void setFilename(const string& filename);
 	void generate();
+	void read(Curso*);
 private:
 	string filename;
 };

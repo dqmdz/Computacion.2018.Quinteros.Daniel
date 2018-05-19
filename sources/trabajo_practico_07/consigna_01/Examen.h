@@ -26,7 +26,7 @@ public:
 	void setMateria(const string& materia);
 	int getNota() const;
 	void setNota(int nota);
-
+	string toString();
 private:
 	string materia;
 	string fecha;

@@ -22,6 +22,7 @@ public:
 	void setLegajo(int legajo);
 	const string& getNombre() const;
 	void setNombre(const string& nombre);
+	string toString();
 private:
 	string nombre;
 	string apellido;

@@ -6,9 +6,13 @@
  */
 
 #include "FileService.h"
+#include "Queue.h"
 
 int main() {
 	(new FileService())->generate();
+	Curso* curso = new Curso();
+	(new FileService())->read(curso);
+	curso->getAlumnos()->show();
 	return 0;
 }
 

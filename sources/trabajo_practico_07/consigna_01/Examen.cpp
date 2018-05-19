@@ -6,6 +6,7 @@
  */
 
 #include "Examen.h"
+#include <sstream>
 
 Examen::Examen() {
 	// TODO Auto-generated constructor stub
@@ -62,4 +63,12 @@ Examen::Examen(string materia, string fecha, int nota, int libro, int folio) {
 
 void Examen::setNota(int nota) {
 	this->nota = nota;
+}
+
+string Examen::toString() {
+	stringstream ss;
+
+	ss << "Materia: " << materia << " - Fecha: " << fecha << " - Nota: " << nota << " - Libro: " << libro << " - Folio: " << folio;
+
+	return ss.str();
 }

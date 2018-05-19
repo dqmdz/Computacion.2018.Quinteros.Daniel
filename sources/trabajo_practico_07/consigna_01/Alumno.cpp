@@ -6,6 +6,7 @@
  */
 
 #include "Alumno.h"
+#include <sstream>
 
 const string& Alumno::getApellido() const {
 	return apellido;
@@ -43,3 +44,10 @@ Alumno::Alumno(string nombre, string apellido, int legajo) {
 	this->legajo = legajo;
 }
 
+string Alumno::toString() {
+	stringstream ss;
+
+	ss << "Nombre: " << nombre << " - Apellido: " << apellido << " - Legajo: " << legajo;
+
+	return ss.str();
+}
