@@ -1,0 +1,5 @@
+#alumno Jose Perez 10
+#examen Computacion 18/05/2018 10 1 35
+#examen Informatica 18/05/2017 7 10 135
+#alumno Pepa Diaz 105
+#examen Computacion 18/05/2018 5 1 35
