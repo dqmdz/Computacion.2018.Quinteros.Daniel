@@ -22,6 +22,10 @@ public:
 	void clean();
 	void alta();
 	void consulta();
+	void modifica();
+	int findByClave(int);
+	int busca();
+	void baja();
 };
 
 #endif /* PERSONASERVICE_H_ */
