@@ -88,7 +88,8 @@ void Link::show() {
 	while (xx != NULL) {
 		cout << "Direccion: " << xx << " - Valor: " << xx->getValue() << " - Next: " << xx->getNext() << endl;
 		xx = xx->getNext();
-	}}
+	}
+}
 
 void Link::setStart(Node* start) {
 	this->start = start;
